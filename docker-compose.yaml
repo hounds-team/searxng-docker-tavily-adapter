@@ -42,7 +42,7 @@ services:
     networks:
       - searxng
     ports:
-      - "8000:8000"
+      - "8099:8000"
     volumes:
       - ./config.yaml:/srv/searxng-docker/config.yaml:ro  # Используем единый конфиг (скопируйте из config.example.yaml)
     depends_on:
